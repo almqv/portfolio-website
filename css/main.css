@@ -24,3 +24,23 @@
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
 .anim_hoverfade { transition-duration: 0.5s; }
 .anim_hoverfade:hover { opacity: 0.4; cursor: pointer; }
+
+
+/*Main styling*/
+#main_wrapper {}
+
+/* Navigation */
+nav {}
+
+nav #logo_container {}
+nav #logo_container img {}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+nav ul li {}
+nav ul li a {
+	text-decoration: none;
+}
