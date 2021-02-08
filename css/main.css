@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); /*"Fira Code" font*/
 
+
+/*Global styling*/
 * {
 	margin: 0;
 	padding: 0;
@@ -8,11 +11,16 @@
 	font-family: "Fira Code", monospace, sans-serif;
 }
 
+
+/*Animations*/
+
+/*Animation that makes the website fade in when you enter it. Cool animation.*/
 @keyframes fadein {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
+.anim_fadein { animation: fadein ease 2s; }
 
-.anim_fadein {
-	animation: fadein ease 2s;
-}
+/*Animation for buttons. Said element gets transparent when mouse is over it.*/
+.anim_hoverfade { transition-duration: 0.5s; }
+.anim_hoverfade:hover { opacity: 0.4; cursor: pointer; }
