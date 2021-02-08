@@ -11,6 +11,9 @@
 	font-family: "Fira Code", monospace, sans-serif;
 }
 
+a {
+	color: #cc6666;
+}
 
 /*Animations*/
 
@@ -22,8 +25,14 @@
 .anim_fadein { animation: fadein ease 2s; }
 
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
-.anim_hoverfade { transition-duration: 0.5s; }
-.anim_hoverfade:hover { opacity: 0.4; cursor: pointer; }
+.button, .anim_hoverfade { transition-duration: 0.5s; }
+.button:hover, .anim_hoverfade:hover { opacity: 0.4; cursor: pointer; }
+
+
+/*Classes*/
+.button {
+	color: #111015;
+}
 
 
 /*Main styling*/
