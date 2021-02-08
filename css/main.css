@@ -7,3 +7,12 @@
 
 	font-family: "Fira Code", monospace, sans-serif;
 }
+
+@keyframes fadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.anim_fadein {
+	animation: fadein ease 2s;
+}
