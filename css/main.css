@@ -38,9 +38,16 @@ a {
 
 .hidden { display: none; }
 
-.cont_section { 
-	height: 100vh;
+.cont_section { height: 100vh; }
+
+.horizontal_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
 }
+.horizontal_list li { margin: 0 0.4rem; }
+.horizontal_list li a { text-decoration: none; }
 
 
 /*Main styling*/
