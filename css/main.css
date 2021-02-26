@@ -17,8 +17,6 @@ html {
 
 a { color: #cc6666; }
 
-section { padding-top: 3.5rem; }
-
 /*Animations*/
 
 /*Animation that makes the website fade in when you enter it. Cool animation.*/
@@ -55,19 +53,16 @@ section { padding-top: 3.5rem; }
 	height: 100%;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: repeat(100vh, 2); /* 5 */
+	grid-template-rows: repeat(100vh, 5);
 	padding: 0 5vw;
 
 	grid-template-areas:
 		"ab"
-		"pr"
 	;
 }
 
 /* Navigation */
 nav {
-	position: fixed;
-	top: 0;
 	display: flex;
 	height: 2.5rem;
 	width: 100vw;
@@ -86,16 +81,12 @@ nav ul li a {
 /* About */
 #about {
 	grid-area: ab;
-	padding-top: 3.5rem;
 }
 
 #art_whoami h1 {
 	font-size: 1.8rem;
 }
 
-#projects {
-	grid-area: pr;
-}
 
 /* Projects */
 /* Experiance */
