@@ -13,7 +13,6 @@ html {
 	box-sizing: border-box;
 
 	font-family: "Fira Code", monospace, sans-serif;
-	font-size: 1.4rem;
 }
 
 a { color: #cc6666; }
@@ -55,7 +54,7 @@ a { color: #cc6666; }
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: repeat(100vh, 5);
-	padding: 0 5%;
+	padding: 0 5vw;
 
 	grid-template-areas:
 		"ab"
@@ -67,6 +66,7 @@ nav {
 	display: flex;
 	height: 2.5rem;
 	width: 100vw;
+	padding: 0 2%;
 }
 
 nav ul {
@@ -81,11 +81,10 @@ nav ul li a {
 /* About */
 #about {
 	grid-area: ab;
-	width: auto;
 }
 
 #art_whoami h1 {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 
 
