@@ -17,7 +17,13 @@ html {
 
 a { color: #cc6666; }
 
-section { padding-top: 3.5rem; }
+section {
+	display: flex;
+	padding-top: 3.5rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 
 /*Animations*/
 
