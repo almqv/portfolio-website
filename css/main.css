@@ -15,7 +15,9 @@ html {
 	font-family: "Fira Code", monospace, sans-serif;
 }
 
-a { color: #cc6666; }
+a { color: #cc6666; text-decoration: none; }
+
+h1 { font-size: 2.5rem; }
 
 section {
 	display: flex;
@@ -35,8 +37,8 @@ section {
 .anim_fadein { animation: fadein ease 2s; }
 
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
-.button, .anim_hoverfade { transition-duration: 0.5s; }
-.button:hover, .anim_hoverfade:hover { opacity: 0.4; cursor: pointer; }
+.button, .anim_hoverfade, a { transition-duration: 0.5s; }
+.button:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
 
 
 /*Classes*/
@@ -98,10 +100,6 @@ nav ul li a {
 /* About */
 #about {
 	grid-area: ab;
-}
-
-#art_whoami h1 {
-	font-size: 1.8rem;
 }
 
 
