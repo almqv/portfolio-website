@@ -132,7 +132,7 @@ nav ul li a {
 #about { grid-area: ab; }
 
 #art_links { margin-top: 4rem; }
-#art_links li { margin: 0 0.8rem; }
+#art_links li { margin: 0 1rem; }
 
 /* Projects */
 #projects { 
