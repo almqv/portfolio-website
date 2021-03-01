@@ -3,30 +3,35 @@
 
 // Yes. This could be considered as bloat. But if you do not like it then disable JavaScript in your browser.
 
-const checkpoint_y = 200;
-const elemSections = document.getElementsByTagName("section");
-
-console.log(elemSections);
+const distanceRange = 150;
+// const elemSections = document.getElementsByTagName("section"); // list of all the sections
+const elemSections =  [ document.getElementById("projects") ];
 
 function elementOffsetY(elem) {
-	var rect = elem.getBoundingClientRect();
+	var rect = elem.getBoundingClientRect(); // elements "rectangle" coordinates
 	
-	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	return scrollTop + rect.top;
+	scrollTop = window.pageYOffset || document.documentElement.scrollTop; // get the Y offset
+	return scrollTop + rect.top; 
 }
 
-function calculateOpacity(elem, scroll_y) { return 1 - (scroll_y / elementOffsetY(elem)); }
+function calculateOpacity(elem, scroll_y) { 
+	let distance = Math.abs(scroll_y - elementOffsetY(elem));	
+	let alpha = distanceRange / distance;
+	console.log(alpha, distance);
+	return alpha; 
+}
 
 window.addEventListener("scroll", () => {
 	const scroll_y = window.pageYOffset; // current Y-coordinate
-	// alpha = 1 - (scroll_y / checkpoint_y); // calculate opacity for said element
-
-	//document.querySelector("section").style.opacity = alpha; // apply opacity to said element
+	
 	var alphaBuffer;
+	var elemBuffer;
 
-	elemSections.forEach( function(elem) {
-		alphaBuffer = calculateOpacity(elem, scroll_y);
-		elem.style.opacity = alphaBuffer;
-		console.log(alphaBuffer);
-	});
+	for (let i = 0; i < elemSections.length; i++) {
+		elemBuffer = elemSections[i];
+
+		alphaBuffer = calculateOpacity(elemBuffer, scroll_y);
+		elemBuffer.style.opacity = alphaBuffer;
+		//console.log(alphaBuffer);
+	}
 });
