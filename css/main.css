@@ -5,6 +5,7 @@
 /*Global styling*/
 html {
 	background: #fefefe;
+	scroll-behavior: smooth;
 }
 
 * {
@@ -109,15 +110,24 @@ body {
 	;
 }
 
-/* Navigation */
-nav {
+/* Header & Navigation */
+header {
 	position: fixed;
 	top: 0;
 	display: flex;
 	height: 2.5rem;
 	width: 100vw;
 	padding: 0 5vw;
+	background: #fefefe;
+	z-index: 1;
 }
+
+#logo_container { padding: 0.2rem; }
+#logo_container img {
+	width: auto;
+	height: 2.2rem;
+}
+
 
 nav ul {
 	display: flex;
