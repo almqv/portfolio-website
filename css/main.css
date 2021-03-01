@@ -37,8 +37,8 @@ section {
 .anim_fadein { animation: fadein ease 2s; }
 
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
-.button, .anim_hoverfade, a { transition-duration: 0.5s; }
-.button:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
+.button, .repocard, .anim_hoverfade, a { transition-duration: 0.5s; }
+.button:hover, .repocard:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
 
 
 /*Classes*/
@@ -63,13 +63,26 @@ section {
 	-ms-transform: translateY(-40%);
 }
 
+/* repo cards, see ../js/fetchrepo.js (unfinsihed)*/
+.repocard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0.8rem;
+	border: 1px solid #ccccccaa;
+}
+
+.repocard h1 { font-size: 1.6rem; }
+.repocard p { font-size: 0.8rem; }
+
 /*Main styling*/
 #main_wrapper {
 	width: 100%;
 	height: 100%;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: repeat(100vh, 2); /* 5 */
+	grid-template-rows: repeat(100vh, 5); /* 5 */
 	padding: 0 5vw;
 
 	grid-template-areas:
@@ -102,8 +115,30 @@ nav ul li a {
 
 
 /* Projects */
-#projects { grid-area: pr; }
+#projects { 
+	grid-area: pr; 
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
 
+	grid-template-areas:
+		"pr_in"
+		"pr_pr"
+	;
+}
+
+#projects .container {
+	top: 20%;
+	transform: translateY(20%);
+	-ms-transform: translateY(20%);
+}
+
+#art_projinfo { grid-area: pr_in; }
+
+#art_projects {
+	grid-area: pr_pr;
+	overflow-y: scroll;
+}
 /* Experiance */
 /* FOSS */
 /* Contact */
