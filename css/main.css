@@ -27,6 +27,8 @@ section {
 	flex-direction: column;
 }
 
+::-webkit-scrollbar { display: none; }
+
 /*Animations*/
 
 /*Animation that makes the website fade in when you enter it. Cool animation.*/
@@ -63,6 +65,13 @@ section {
 	-ms-transform: translateY(-40%);
 }
 
+.container_center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 /* repo cards, see ../js/fetchrepo.js (unfinsihed)*/
 .repocard {
 	display: flex;
@@ -71,6 +80,7 @@ section {
 	justify-content: center;
 	padding: 0.8rem;
 	border: 1px solid #ccccccaa;
+	margin: 1rem 0;
 }
 
 .repocard h1 { font-size: 1.6rem; }
@@ -119,7 +129,7 @@ nav ul li a {
 	grid-area: pr; 
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 50%;
 
 	grid-template-areas:
 		"pr_in"
@@ -127,17 +137,15 @@ nav ul li a {
 	;
 }
 
-#projects .container {
-	top: 20%;
-	transform: translateY(20%);
-	-ms-transform: translateY(20%);
+#art_projinfo { 
+	grid-area: pr_in; 
+	margin-bottom: 2rem;
 }
-
-#art_projinfo { grid-area: pr_in; }
 
 #art_projects {
 	grid-area: pr_pr;
 	overflow-y: scroll;
+	margin-bottom: 2rem;
 }
 /* Experiance */
 /* FOSS */
