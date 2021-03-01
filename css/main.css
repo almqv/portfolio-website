@@ -33,7 +33,6 @@ body {
 	-ms-overflow-style: none; 
 	scrollbar-width: none;
 }
-
 ::-webkit-scrollbar { display: none; }
 
 /*Animations*/
@@ -118,7 +117,7 @@ header {
 	height: 2.5rem;
 	width: 100vw;
 	padding: 0 5vw;
-	background: #fefefe;
+	background: #ffffffea;
 	z-index: 1;
 }
 
