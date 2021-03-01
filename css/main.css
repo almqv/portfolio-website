@@ -65,6 +65,8 @@ body {
 .horizontal_list li { margin: 0 0.4rem; }
 .horizontal_list li a { text-decoration: none; }
 
+.fab { font-size: 1.2rem; } /*Font Awesome icons*/
+
 .container {
 	top: 40%;
 	transform: translateY(-40%);
@@ -129,6 +131,8 @@ nav ul li a {
 /* About */
 #about { grid-area: ab; }
 
+#art_links { margin-top: 4rem; }
+#art_links li { margin: 0 0.8rem; }
 
 /* Projects */
 #projects { 
