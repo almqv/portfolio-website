@@ -55,6 +55,13 @@ section {
 .horizontal_list li { margin: 0 0.4rem; }
 .horizontal_list li a { text-decoration: none; }
 
+.container {
+	position: absolute;
+	top: 40%;
+	transform: translateY(-40%);
+	-ms-transform: translateY(-40%);
+}
+
 /*Main styling*/
 #main_wrapper {
 	width: 100%;
