@@ -13,6 +13,7 @@ html {
 	box-sizing: border-box;
 
 	font-family: "Fira Code", monospace, sans-serif;
+	color: #000;
 }
 
 a { color: #cc6666; text-decoration: none; }
