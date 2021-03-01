@@ -150,7 +150,6 @@ nav ul li a {
 
 #art_projects {
 	grid-area: pr_pr;
-	overflow-y: scroll;
 	margin-bottom: 2rem;
 }
 /* Experiance */
