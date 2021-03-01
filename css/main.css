@@ -98,15 +98,11 @@ nav ul li a {
 }
 
 /* About */
-#about {
-	grid-area: ab;
-}
+#about { grid-area: ab; }
 
 
 /* Projects */
-#projects {
-	grid-area: pr;
-}
+#projects { grid-area: pr; }
 
 /* Experiance */
 /* FOSS */
