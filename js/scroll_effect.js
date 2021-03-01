@@ -7,24 +7,34 @@
 const distanceRange = 150;
 const elemSections = document.getElementsByTagName("section"); // list of all the sections
 
-function elementInViewport(elem) {
-	var rect = elem.getBoundingClientRect(); // elements "rectangle" coordinates
-	
-	offset_y = window.pageYOffset || document.documentElement.scrollTop; // get the Y offset
-	return rect.top >= 0 && rect.bottom <= offset_y;
+function replaceClass(elem, cl, newcl) {
+	elem.className = elem.className.replace(/\bcl\b/g, newcl);
 }
 
+function elementInViewport(elem, fraction) {
+	let rect = elem.getBoundingClientRect();
+	let viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+	topOffset = rect.top >= 0 ? 0 : rect.top;
+	topFraction = Math.floor(1.0 - (topOffset / rect.height));
+
+	bottomOffset = rect.bottom - viewportHeight;
+	bottomFraction = Math.floor( 1.0 - (bottomOffset / rect.height) );
+
+	return !(topFraction < fraction || bottomFraction < fraction);
+};
+
+
 window.addEventListener("scroll", () => {
-	const scroll_y = window.pageYOffset; // current Y-coordinate
+	//const scroll_y = window.pageYOffset; // current Y-coordinate
 	
-	var alphaBuffer;
+	var visibleBuffer;
 	var elemBuffer;
 
 	for (let i = 0; i < elemSections.length; i++) {
 		elemBuffer = elemSections[i];
 
-		alphaBuffer = calculateOpacity(elemBuffer, scroll_y);
-		elemBuffer.style.opacity = alphaBuffer;
-		//console.log(alphaBuffer);
+		visibleBuffer = elementInViewport(elemBuffer, 0.2);
+		console.log(elemBuffer.id, visibleBuffer);
 	}
 });
