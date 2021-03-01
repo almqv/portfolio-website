@@ -1,24 +1,17 @@
 // Animation for scrolling.
 // Elements fade out/in relative to viewport distance.
+// i.e. if the element is within a range of the viewport then fade in, else fade out.
 
 // Yes. This could be considered as bloat. But if you do not like it then disable JavaScript in your browser.
 
 const distanceRange = 150;
-// const elemSections = document.getElementsByTagName("section"); // list of all the sections
-const elemSections =  [ document.getElementById("projects") ];
+const elemSections = document.getElementsByTagName("section"); // list of all the sections
 
-function elementOffsetY(elem) {
+function elementInViewport(elem) {
 	var rect = elem.getBoundingClientRect(); // elements "rectangle" coordinates
 	
-	scrollTop = window.pageYOffset || document.documentElement.scrollTop; // get the Y offset
-	return scrollTop + rect.top; 
-}
-
-function calculateOpacity(elem, scroll_y) { 
-	let distance = Math.abs(scroll_y - elementOffsetY(elem));	
-	let alpha = distanceRange / distance;
-	console.log(alpha, distance);
-	return alpha; 
+	offset_y = window.pageYOffset || document.documentElement.scrollTop; // get the Y offset
+	return rect.top >= 0 && rect.bottom <= offset_y;
 }
 
 window.addEventListener("scroll", () => {
