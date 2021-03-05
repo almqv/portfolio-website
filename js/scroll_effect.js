@@ -13,7 +13,7 @@ let options = {
 }
 
 function test(a, b) {
-	console.log(a, b, "AHIOdfvchoisdhfiosdhfio", count);
+	console.log(a, b, "AHIOdfvchoisdhfiosdhfio");
 }
 
 let sectionsCount = elemSections.length;
