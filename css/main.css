@@ -135,6 +135,9 @@ header {
 	height: 2rem;
 }
 
+nav {
+	position: fixed;
+}
 
 nav ul {
 	display: flex;
