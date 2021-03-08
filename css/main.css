@@ -6,7 +6,7 @@
 html {
 	background: #fefefe;
 	scroll-behavior: smooth;
-	transition-property: opacity;
+	/*transition-property: opacity;*/
 	transition-duration: 2s;
 }
 
@@ -55,13 +55,9 @@ body {
 .button { opacity: 1.0; color: #111015; }
 
 .hidden { 
-	display: none; 
-	transition-duration: 1s;
 	opacity: 0;
-}
-.hidden:after {
-	display: fixed;
-	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.25s;
 }
 
 .cont_section { height: 100vh; }
@@ -137,7 +133,6 @@ header {
 	z-index: 2;
 }
 
-
 #logo_container { 
 	padding: 0.2rem; 
 	z-index: 2;
@@ -150,13 +145,15 @@ header {
 
 nav {
 	display: flex;
-	background: #fefefeea;
+	background: #fefefe;
+	opacity: 1;
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
-	transition-duration: 1s;
+	transition-duration: 0.4s;
+	transition-property: opacity;
 	padding: 1rem;
 	z-index: 1;
 	align-items: center;
@@ -171,7 +168,7 @@ nav ul {
 
 nav ul li { 
 	text-align: center;
-	font-size: 4rem;
+	font-size: 2.8rem;
 	margin: 1rem 0;
 }
 
@@ -207,6 +204,7 @@ nav ul li a {
 	grid-area: pr_pr;
 	margin-bottom: 2rem;
 }
+
 /* Experiance */
 /* FOSS */
 /* Contact */

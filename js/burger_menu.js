@@ -15,6 +15,5 @@ burger.addEventListener("click", _ => {
 for( navbutton of navButtons ) {
 	navbutton.addEventListener("click", _ => {
 		nav.classList.add("hidden");
-		console.log("AHOfhsdoifhoi");
 	})
 }
