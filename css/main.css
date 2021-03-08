@@ -138,7 +138,11 @@ header {
 }
 
 
-#logo_container { padding: 0.2rem; }
+#logo_container { 
+	padding: 0.2rem; 
+	z-index: 2;
+}
+
 #logo_container img {
 	width: auto;
 	height: 2rem;
