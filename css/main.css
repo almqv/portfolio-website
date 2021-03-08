@@ -41,7 +41,6 @@ body {
 /*Animations*/
 
 /*Animation that makes the website fade in when you enter it. Cool animation.*/
-
 .anim_fadein { opacity: 1; }
 .anim_fadeout { opacity: 0; }
 
@@ -121,6 +120,12 @@ header {
 	background: #ffffffea;
 	z-index: 1;
 }
+
+#burger {
+	cursor: pointer;
+	margin-left: auto;
+}
+
 
 #logo_container { padding: 0.2rem; }
 #logo_container img {
