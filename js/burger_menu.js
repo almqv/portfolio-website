@@ -1,5 +1,6 @@
 const burger = document.getElementById("burger");
+const nav = document.querySelector("nav");
 
 burger.addEventListener("click", event => {
-	console.log("Event: ", event);
+	nav.classList.toggle("hidden");
 })
