@@ -6,6 +6,8 @@
 html {
 	background: #fefefe;
 	scroll-behavior: smooth;
+	transition-property: opacity;
+	transition-duration: 2s;
 }
 
 * {
