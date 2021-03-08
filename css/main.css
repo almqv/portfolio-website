@@ -4,7 +4,7 @@
 
 /*Global styling*/
 html {
-	background: #fefefe;
+	background: linear-gradient(180deg, #fefefe, #000);
 	scroll-behavior: smooth;
 	/*transition-property: opacity;*/
 	transition-duration: 2s;
@@ -58,6 +58,7 @@ body {
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: 0.25s;
+	margin-top: -100vh;
 }
 
 .cont_section { height: 100vh; }
