@@ -41,12 +41,9 @@ body {
 /*Animations*/
 
 /*Animation that makes the website fade in when you enter it. Cool animation.*/
-@keyframes fade {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-.anim_fadein { animation: fade ease 2s; animation-direction: alternate; }
-.anim_fadeout { animation: fade ease 2s; animation-direction: alternate-reverse; }
+
+.anim_fadein { opacity: 1; }
+.anim_fadeout { opacity: 0; }
 
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
 .button, .repocard, .anim_hoverfade, a { transition-duration: 0.5s; }
