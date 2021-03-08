@@ -54,7 +54,15 @@ body {
 /*Classes*/
 .button { opacity: 1.0; color: #111015; }
 
-.hidden { display: none; }
+.hidden { 
+	display: none; 
+	transition-duration: 1s;
+	opacity: 0;
+}
+.hidden:after {
+	display: fixed;
+	opacity: 1;
+}
 
 .cont_section { height: 100vh; }
 
@@ -126,6 +134,7 @@ header {
 #burger {
 	cursor: pointer;
 	margin-left: auto;
+	z-index: 2;
 }
 
 
@@ -136,7 +145,18 @@ header {
 }
 
 nav {
+	display: flex;
+	background: #fefefeea;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
+	top: 0;
+	left: 0;
+	transition-duration: 1s;
+	padding: 1rem;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
 }
 
 nav ul {
@@ -144,6 +164,12 @@ nav ul {
 	flex-direction: column;
 	list-style-type: none;
 }
+
+nav ul li { 
+	text-align: center;
+	font-size: 10vw;
+}
+
 nav ul li a {
 	text-decoration: none;
 }
