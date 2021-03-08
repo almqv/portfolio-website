@@ -14,7 +14,6 @@ let options = {
 }
 
 function toggleAnimation(elem, intRatio) {
-	console.log("Does this work?", elem, intRatio);
 	if( intRatio >= intRatioLimit ) {
 		// fade in
 		elem.classList.remove("anim_fadeout");
