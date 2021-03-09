@@ -113,6 +113,7 @@ body {
 	grid-template-areas:
 		"ab"
 		"pr"
+		"fo"
 	;
 }
 
@@ -176,6 +177,20 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 }
+
+
+footer {
+	grid-area: fo;
+	text-align: center;
+}
+footer h1 {
+	font-size: 0.9rem;
+	color: #0f0f0f;
+}
+footer p {
+	color: #f0f0f0;
+}
+
 
 /* About */
 #about { grid-area: ab; }
