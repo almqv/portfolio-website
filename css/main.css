@@ -1,6 +1,13 @@
 /*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); /*"Fira Code" font*/
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css'); /*"Font Awesome" icons font*/
+
+/*Fonts*/
+@font-face {
+	font-family: "FiraNerd";
+	font-size: 2rem;
+	src: url("../misc/font/firanerd.ttf");
+}
+.icon { font-size: 1.6rem; }
 
 /*Global styling*/
 html {
@@ -15,7 +22,7 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 
-	font-family: "Fira Code", monospace, sans-serif;
+	font-family: "FiraNerd", "Fira Code", monospace, sans-serif;
 	color: #000;
 }
 
@@ -49,7 +56,6 @@ body {
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
 .button, .repocard, .anim_hoverfade, a { transition-duration: 0.5s; }
 .button:hover, .repocard:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
-
 
 /*Classes*/
 .button { opacity: 1.0; color: #111015; }
