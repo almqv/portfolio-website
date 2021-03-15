@@ -204,21 +204,13 @@ footer p {
 /* About */
 #about { grid-area: ab; }
 
-#art_links { margin-top: 4rem; }
+#art_links { margin-top: 2rem; }
 #art_links li { margin: 0 1rem; }
 
 /* Projects */
 #projects { 
 	grid-area: pr; 
-	
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 50%;
 
-	grid-template-areas:
-		"pr_in"
-		"pr_pr"
-	;
 }
 
 #art_projinfo { 
@@ -245,9 +237,9 @@ footer p {
 	;
 }
 
-#experiance section {
-	margin: 0;
-}
+#art_experiance		{ grid-area: ex_ex; }
+#art_progexp		{ grid-area: ex_pr; }
+#art_sysexp			{ grid-area: ex_sy; }
 
 /* FOSS */
 #foss {
