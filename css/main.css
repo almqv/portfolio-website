@@ -223,12 +223,12 @@ footer p {
 	margin-bottom: 2rem;
 }
 
-/* Experiance */
-#experiance {
+/* experience */
+#experience {
 	grid-area: ex;
 	display: grid;
-	grid-template-columns: 1fr;
 	grid-template-rows: repeat(1fr, 3);
+	grid-template-columns: 1fr;
 
 	grid-template-areas:
 		"ex_ex"
@@ -237,7 +237,7 @@ footer p {
 	;
 }
 
-#art_experiance		{ grid-area: ex_ex; }
+#art_experience		{ grid-area: ex_ex; }
 #art_progexp		{ grid-area: ex_pr; }
 #art_sysexp			{ grid-area: ex_sy; }
 
@@ -250,3 +250,6 @@ footer p {
 #contact {
 	grid-area: co;
 }
+
+
+/*Media queries*/
