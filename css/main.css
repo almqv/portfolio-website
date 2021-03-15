@@ -119,6 +119,9 @@ body {
 	grid-template-areas:
 		"ab"
 		"pr"
+		"ex"
+		"co"
+		"fs"
 		"fo"
 	;
 }
@@ -207,6 +210,7 @@ footer p {
 /* Projects */
 #projects { 
 	grid-area: pr; 
+	
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 50%;
@@ -228,6 +232,29 @@ footer p {
 }
 
 /* Experiance */
-/* FOSS */
-/* Contact */
+#experiance {
+	grid-area: ex;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(1fr, 3);
 
+	grid-template-areas:
+		"ex_ex"
+		"ex_pr"
+		"ex_sy"
+	;
+}
+
+#experiance section {
+	margin: 0;
+}
+
+/* FOSS */
+#foss {
+	grid-area: fs;
+}
+
+/* Contact */
+#contact {
+	grid-area: co;
+}
