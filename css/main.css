@@ -11,7 +11,7 @@
 
 /*Global styling*/
 html {
-	background: linear-gradient(200deg, #fefefe, #ffffff);
+	background: linear-gradient(200deg, #fefefe, #fff);
 	scroll-behavior: smooth;
 	/*transition-property: opacity;*/
 	transition-duration: 2s;
