@@ -11,7 +11,7 @@
 
 /*Global styling*/
 html {
-	background: linear-gradient(200deg, #fefefe, #ffffff);
+	background: linear-gradient(200deg, #111015, #111015);
 	scroll-behavior: smooth;
 	/*transition-property: opacity;*/
 	transition-duration: 2s;
@@ -23,7 +23,7 @@ html {
 	box-sizing: border-box;
 
 	font-family: "FiraNerd", "Fira Code", monospace, sans-serif;
-	color: #000;
+	color: #fefefe;
 }
 
 a { color: #cc6666; text-decoration: none; }
@@ -60,7 +60,7 @@ body {
 .button:hover, .repocard:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
 
 /*Classes*/
-.button { opacity: 1.0; color: #111015; }
+.button { opacity: 1.0; color: #fefefe; }
 
 .hidden { 
 	opacity: 0;
@@ -136,7 +136,7 @@ header {
 	height: 2.5rem;
 	width: 100vw;
 	padding: 0 5vw;
-	background: #ffffffea;
+	background: #111015ea;
 	z-index: 1;
 }
 
@@ -158,7 +158,7 @@ header {
 
 nav {
 	display: flex;
-	background: #fefefe;
+	background: #111015fe;
 	opacity: 1;
 	width: 100vw;
 	height: 100vh;
@@ -196,10 +196,10 @@ footer {
 }
 footer h1 {
 	font-size: 0.9rem;
-	color: #0f0f0f;
+	color: #fefefe;
 }
 footer p {
-	color: #f0f0f0;
+	color: #0f0f0f;
 }
 
 
