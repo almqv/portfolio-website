@@ -1,6 +1,3 @@
-/*Imports*/
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); /*"Fira Code" font*/
-
 /*Fonts*/
 @font-face {
 	font-family: "FiraNerd";
@@ -11,10 +8,14 @@
 
 /*Global styling*/
 html {
-	background: linear-gradient(200deg, #111015, #111015);
+	background: linear-gradient(100deg, #111015, #1a1a1a);
 	scroll-behavior: smooth;
 	/*transition-property: opacity;*/
 	transition-duration: 2s;
+}
+
+html:after {
+	background: linear-gradient(-100deg, #111015, #1a1a1a);
 }
 
 * {
@@ -22,7 +23,7 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 
-	font-family: "FiraNerd", "Fira Code", monospace, sans-serif;
+	font-family: "FiraNerd", monospace, sans-serif;
 	color: #fefefe;
 }
 
@@ -158,7 +159,7 @@ header {
 
 nav {
 	display: flex;
-	background: #111015fe;
+	background: linear-gradient(100deg, #111015, #1a1a1a);
 	opacity: 1;
 	width: 100vw;
 	height: 100vh;
@@ -224,6 +225,7 @@ footer p {
 	grid-area: pr_pr;
 	margin-bottom: 2rem;
 }
+#art_projects h1 { font-size: 1.8rem; }
 
 /* experience */
 #experience {
@@ -246,6 +248,5 @@ footer p {
 #contact {
 	grid-area: co;
 }
-
 
 /*Media queries*/
