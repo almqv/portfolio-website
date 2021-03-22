@@ -4,13 +4,18 @@ const navButtons = document.getElementsByClassName("navlink");
 
 nav.classList.add("anim_fadein");
 
-burger.addEventListener("click", _ => {
-	if( nav.classList.contains("hidden") ) {
+function toggleMenu(ishidden) {
+	if( ishidden ) {
 		nav.classList.remove("hidden");
 	} else {
 		nav.classList.add("hidden");
 	}
-})
+}
+
+burger.addEventListener("click", _ => {
+	let ishidden = nav.classList.contains("hidden"); 
+	toggleMenu(ishidden);
+});
 
 for( navbutton of navButtons ) {
 	navbutton.addEventListener("click", _ => {
