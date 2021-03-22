@@ -251,3 +251,23 @@ footer p {
 }
 
 /*Media queries*/
+@media only screen and (min-width: 600px) {
+	body {
+		background-color: red;
+	}
+
+	nav {
+		display: flex;
+		justify-self: center;
+		align-self: center;
+		width: auto;
+		height: 2.5rem;
+	}
+
+	nav ul { 
+		flex-direction: row; 
+		right: 2rem;
+	}
+	nav ul li { margin: 0.4rem; }
+	nav ul li a { font-size: 1.2rem; }
+}
