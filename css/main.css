@@ -253,7 +253,7 @@ footer p {
 /*Media queries*/
 @media only screen and (min-width: 600px) {
 	body {
-		background-color: red;
+		background-color: red; /* DEBUG: remove me */
 	}
 
 	nav {
