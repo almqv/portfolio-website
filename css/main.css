@@ -271,6 +271,7 @@ footer p {
 /*Media queries*/
 @media only screen and (min-width: 600px) {
 	nav {
+		background: #0000;
 		display: flex;
 		justify-self: center;
 		align-self: center;
