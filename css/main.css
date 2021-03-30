@@ -28,9 +28,22 @@ html:after {
 	font-size: 0.91rem;
 }
 
+code {
+	background: #4d4b46;
+	padding: 1px;
+	border-radius: 4px;
+	font-size: 0.8rem;
+}
+
+article {
+	width: 100%;
+}
+
 a { color: #cc6666; text-decoration: none; }
 
 h1 { font-size: 2.5rem; }
+
+ul { list-style-type: none; }
 
 section {
 	display: flex;
@@ -240,22 +253,23 @@ footer p {
 #art_progsysa		{ grid-area: ex_ps; }
 #art_progsysa h2	{ margin: 2rem 0 0.5rem 1rem; } 
 
-/* FOSS */
-#foss {
-	grid-area: fs;
-}
 
 /* Contact */
 #contact {
 	grid-area: co;
 }
 
+#contact article { margin: 1rem 0; }
+
+#contact ul li { margin: 0.7rem; }
+
+/* FOSS */
+#foss {
+	grid-area: fs;
+}
+
 /*Media queries*/
 @media only screen and (min-width: 600px) {
-	body {
-		background-color: red; /* DEBUG: remove me */
-	}
-
 	nav {
 		display: flex;
 		justify-self: center;
