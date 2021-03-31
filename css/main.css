@@ -276,10 +276,10 @@ footer p {
 
 @media only screen and (min-width: 600px) {
 	nav {
+		display: block;
+		float: left;
 		background: #0000;
 		display: flex;
-		justify-self: center;
-		align-self: center;
 		width: auto;
 		height: 2.5rem;
 		margin-right: 2rem;
