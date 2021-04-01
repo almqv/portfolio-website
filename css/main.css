@@ -169,6 +169,7 @@ header {
 
 nav {
 	display: flex;
+	float: right;
 	background: #111015;
 	opacity: 1;
 	width: 100vw;
@@ -178,7 +179,7 @@ nav {
 	left: 0;
 	transition-duration: 0.4s;
 	transition-property: opacity;
-	padding: 1rem;
+	padding: 0.2rem;
 	z-index: 1;
 	align-items: center;
 	justify-content: center;
@@ -271,14 +272,18 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
+	header {
+		justify-content: space-between;
+	}
+
 	nav {
-		display: block;
-		float: left;
 		background: #0000;
-		display: flex;
 		width: auto;
 		height: 2.5rem;
-		margin-right: 2rem;
+		margin-left: auto;
+		left: unset;
+		top: unset;
+		position: unset;
 	}
 
 	nav ul { 
