@@ -8,14 +8,10 @@
 
 /*Global styling*/
 html {
-	background: linear-gradient(100deg, #111015, #1a1a1a);
+	background: #111015;
 	scroll-behavior: smooth;
 	/*transition-property: opacity;*/
 	transition-duration: 2s;
-}
-
-html:after {
-	background: linear-gradient(-100deg, #111015, #1a1a1a);
 }
 
 * {
@@ -173,7 +169,7 @@ header {
 
 nav {
 	display: flex;
-	background: linear-gradient(100deg, #111015, #1a1a1a);
+	background: #111015;
 	opacity: 1;
 	width: 100vw;
 	height: 100vh;
