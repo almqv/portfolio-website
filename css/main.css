@@ -146,7 +146,9 @@ header {
 	display: flex;
 	height: 2.5rem;
 	width: 100vw;
-	padding: 0 5vw;
+	padding: 4px 5vw;
+	justify-content: center;
+	align-items: center;
 	background: #111015ea;
 	z-index: 1;
 }
@@ -206,10 +208,14 @@ footer {
 	grid-area: fo;
 	text-align: center;
 }
+
 footer h1 {
 	font-size: 0.9rem;
 	color: #fefefe;
 }
+
+footer ul { margin-top: 0.2rem; }
+
 footer p {
 	color: #0f0f0f;
 }
