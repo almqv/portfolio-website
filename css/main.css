@@ -67,8 +67,8 @@ body {
 .anim_fadeout { opacity: 0; }
 
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
-.button, .repocard, .anim_hoverfade, a { transition-duration: 0.5s; }
-.button:hover, .repocard:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
+.button, .anim_hoverfade, a { transition-duration: 0.5s; }
+.button:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
 
 /*Classes*/
 .button { opacity: 1.0; color: #fefefe; }
@@ -106,18 +106,23 @@ body {
 	align-items: center;
 }
 
-/* repo cards, see ../js/fetchrepo.js (unfinsihed)*/
 .repocard {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	padding: 0.8rem;
 	border: 1px solid #ccccccaa;
 	margin: 1rem 0;
 }
 
-.repocard h1 { font-size: 1.6rem; }
+.repocard ul {
+	margin-top: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.repocard ul li { margin: 0 1rem; }
+.repocard h2 { font-size: 1.1rem; }
 .repocard p { font-size: 0.8rem; }
 
 /*Main styling*/
@@ -256,7 +261,6 @@ footer p {
 
 
 /* Contact */
-
 #contact article { margin: 1rem 0; }
 
 #contact ul li { margin: 0.7rem; }
