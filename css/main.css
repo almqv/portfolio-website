@@ -124,19 +124,7 @@ body {
 #main_wrapper {
 	width: 100%;
 	height: 100%;
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: repeat(100vh, 5) 20rem; /* 5 */
 	padding: 0 5vw;
-
-	grid-template-areas:
-		"ab"
-		"pr"
-		"ex"
-		"co"
-		"fs"
-		"fo"
-	;
 }
 
 /* Header & Navigation */
@@ -205,8 +193,12 @@ nav ul li a {
 
 
 footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "fo_li fo_in";
 	background: #1a181f;
-	padding: 1rem;
+	padding: 1rem 10vw;
 	grid-area: fo;
 	text-align: center;
 }
@@ -222,6 +214,11 @@ footer p {
 	color: #0f0f0f;
 }
 
+#art_fo_license { grid-area: fo_li; }
+
+#art_fo_links { grid-area: fo_in; }
+#art_fo_links ul li { margin-top: 0.5rem; }
+#art_fo_links ul li a { color: unset; }
 
 /* About */
 #about { grid-area: ab; }
