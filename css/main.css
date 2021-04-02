@@ -126,7 +126,7 @@ body {
 	height: 100%;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: repeat(100vh, 5); /* 5 */
+	grid-template-rows: repeat(100vh, 5) 20rem; /* 5 */
 	padding: 0 5vw;
 
 	grid-template-areas:
@@ -205,6 +205,8 @@ nav ul li a {
 
 
 footer {
+	background: #1a181f;
+	padding: 1rem;
 	grid-area: fo;
 	text-align: center;
 }
