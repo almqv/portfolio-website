@@ -214,7 +214,13 @@ footer p {
 	color: #0f0f0f;
 }
 
-#art_fo_license { grid-area: fo_li; }
+#art_fo_license { 
+	display: flex;
+	flex-direction: column;
+	grid-area: fo_li;
+	justify-content: center;
+	align-items: center;
+}
 
 #art_fo_links { grid-area: fo_in; }
 #art_fo_links ul li { margin-top: 0.5rem; }
