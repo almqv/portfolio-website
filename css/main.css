@@ -221,16 +221,10 @@ footer p {
 #art_fo_links ul li a { color: unset; }
 
 /* About */
-#about { grid-area: ab; }
-
 #art_links { margin-top: 2rem; }
 #art_links li { margin: 0 1rem; }
 
 /* Projects */
-#projects { 
-	grid-area: pr; 
-
-}
 
 #art_projinfo { 
 	grid-area: pr_in; 
@@ -245,7 +239,6 @@ footer p {
 
 /* experience */
 #experience {
-	grid-area: ex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -257,18 +250,12 @@ footer p {
 
 
 /* Contact */
-#contact {
-	grid-area: co;
-}
 
 #contact article { margin: 1rem 0; }
 
 #contact ul li { margin: 0.7rem; }
 
 /* FOSS */
-#foss {
-	grid-area: fs;
-}
 
 /*Media queries*/
 @media only screen and (max-width: 398px) {
