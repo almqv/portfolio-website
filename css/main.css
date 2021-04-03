@@ -64,7 +64,7 @@ body {
 
 /*Animation that makes the website fade in when you enter it. Cool animation.*/
 .anim_fadein { opacity: 1; }
-.anim_fadeout { opacity: 0; }
+.anim_fadeout { opacity: 0.1; }
 
 /*Animation for buttons. Said element gets transparent when mouse is over it.*/
 .button, .anim_hoverfade, a { transition-duration: 0.5s; }
