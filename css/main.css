@@ -302,23 +302,24 @@ footer p {
 		margin-top: 0;
 	}
 
-	#projects {
+	section {
 		display: grid;
+		gap: 8rem;
+	}
+
+	#projects {
 		grid-template-columns: 1fr 2fr;
 		grid-template-rows: 1fr;
 		grid-template-areas: "pr_in pr_pr";
-		gap: 8rem;
 	}
 
 	#art_projinfo { grid-area: pr_in; }
 	#art_projects { grid-area: pr_pr; }
 
 	#contact {
-		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 		grid-template-areas: "co_in co_li";
-		gap: 8rem;
 	}
 
 	#art_co_about { grid-template-areas: co_in; }
