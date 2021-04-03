@@ -273,7 +273,7 @@ footer p {
 	.icon { font-size: 1.2rem; }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 690px) {
 	section { max-width: 1200px; }
 
 	header { justify-content: space-between; }
@@ -304,9 +304,10 @@ footer p {
 
 	#projects {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
 		grid-template-rows: 1fr;
 		grid-template-areas: "pr_in pr_pr";
+		gap: 8rem;
 	}
 
 	#art_projinfo { grid-area: pr_in; }
