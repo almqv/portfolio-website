@@ -304,10 +304,10 @@ footer p {
 
 	section {
 		display: grid;
-		gap: 8rem;
 	}
 
 	#projects {
+		gap: 8rem;
 		grid-template-columns: 1fr 2fr;
 		grid-template-rows: 1fr;
 		grid-template-areas: "pr_in pr_pr";
@@ -317,6 +317,7 @@ footer p {
 	#art_projects { grid-area: pr_pr; }
 
 	#contact {
+		gap: 4rem;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 		grid-template-areas: "co_in co_li";
