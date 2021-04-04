@@ -2,4 +2,4 @@
 Source-code for my portfolio website (http://almtech.se)
 
 #### Website Preview
-![Website Preview](preview.png)
+![Website Preview](misc/website_showcase.mkv)
