@@ -335,8 +335,8 @@ footer p {
 		grid-template-areas: "co_in co_li";
 	}
 
-	#art_co_about { grid-template-areas: co_in; }
-	#art_co_links { grid-template-areas: co_li; }
+	#art_co_about { grid-area: co_in; }
+	#art_co_links { grid-area: co_li; }
 }
 
 @media only screen and (min-width: 1100px) { * { font-size: 1.1rem; } }
