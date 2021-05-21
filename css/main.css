@@ -127,6 +127,11 @@ body {
 .repocard h2 { font-size: 1.1rem; }
 .repocard p { font-size: 0.8rem; }
 
+.rice-picture {
+	width: auto;
+	height: 10rem;
+}
+
 /*Main styling*/
 #main_wrapper {
 	width: 100%;
