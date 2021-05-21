@@ -10,7 +10,6 @@
 html {
 	background: #111015;
 	scroll-behavior: smooth;
-	/*transition-property: opacity;*/
 	transition-duration: 2s;
 }
 
@@ -127,11 +126,20 @@ body {
 .repocard h2 { font-size: 1.1rem; }
 .repocard p { font-size: 0.8rem; }
 
+
+/* rice.html stuff */
 .rice-picture {
 	width: auto;
 	height: 25rem;
 	border: 4px solid #fefefe8a;
 }
+
+#rice {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 
 /*Main styling*/
 #main_wrapper {
