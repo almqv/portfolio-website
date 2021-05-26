@@ -148,6 +148,35 @@ body {
 	flex-wrap: wrap;
 }
 
+#picture-modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: 99;
+	background-color: #111015; /* Fallback color */
+	background-color: #111015e8;
+}
+
+#picture-modal .container_center { height: 100%; }
+
+#picture-modal img {
+	display: block;
+	margin-bottom: 2rem;
+	width: 90%;
+	max-width: 1075px;
+	height: auto;
+	border: 2px solid #fefefe8a;
+}
+
+#picture-modal p {
+	font-size: 1.1rem;
+	color: #fefefe;
+	text-align: center;
+}
 
 /*Main styling*/
 #main_wrapper {

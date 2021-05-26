@@ -20,7 +20,7 @@
 			</svg>
 
 			<nav class="hidden">		
-				<ul> <!-- This will be hidden until the user clicks the burger menu (or desktop) !-->
+				<ul> <!-- This will be hidden until the user clicks the burger menu (or desktop) -->
 					<li><a class="button navlink" href="index.html#about">About</a></li>
 					<li><a class="button navlink" href="index.html#projects">Projects</a></li>
 					<li><a class="button navlink" href="index.html#experience">Experience</a></li>
@@ -30,6 +30,13 @@
 				</ul>
 			</nav>
 		</header>
+		
+		<div id="picture-modal"> <!-- This will be hidden until a picture is viewed -->
+			<div class="container_center">
+				<img src="" alt="Failed to load image"> <!-- place holder -->
+				<p></p> <!-- also a placeholder -->
+			</div>
+		</div>
 
 		<div class="anim_fadein" id="main_wrapper">
 			<section id="rice_info">
@@ -74,7 +81,7 @@
 			</article>
 		</footer>
 
-		<!--<script src="js/scroll_effect.js"></script>--!>
 		<script src="js/burger_menu.js"></script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>
