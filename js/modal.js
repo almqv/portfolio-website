@@ -6,8 +6,6 @@ const modal_txt = modal.children[0].children[1];
 
 const imgs = document.getElementsByClassName("rice-picture");
 
-console.log(imgs);
-
 for( let i=0; i < imgs.length; i++ ) {
 	let img = imgs[i];
 	img.addEventListener("click", _ => {
