@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>AlmTech</title>
+	</head>
+	<body>
+		<header>
+			<div id="logo_container"><img src="img/logo.png" alt="AlmTech Logo"></div>
+
+			<svg id="burger" class="button" width="25" viewBox="0 0 25 20">
+				<g fill="#fefefe" class="burger_lines">
+					<rect width="100%" height="2" y="0" class="line1"></rect>
+					<rect width="100%" height="2" y="6" class="line2"></rect>
+					<rect width="100%" height="2" y="12" class="line3"></rect>
+				</g>
+			</svg>
+
+			<nav class="hidden">		
+				<ul> <!-- This will be hidden until the user clicks the burger menu (or desktop) -->
+					<li><a class="button navlink" href="index.html#about">About</a></li>
+					<li><a class="button navlink" href="index.html#projects">Projects</a></li>
+					<li><a class="button navlink" href="index.html#experience">Experience</a></li>
+					<li><a class="button navlink" href="index.html#contact">Contact</a></li>
+					<li><a class="button navlink" href="index.html#foss">FOSS</a></li>
+					<li><a class="button navlink" href="#">RICE</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="picture-modal"> <!-- This will be hidden until a picture is viewed -->
+			<div class="container_center">
+				<img src="img/rice/5-Dec-2020.jpeg" alt="Failed to load image"> <!-- placeholder -->
+				<p></p> <!-- also a placeholder -->
+			</div>
+		</div>
+
+		<div class="anim_fadein" id="main_wrapper">
+			<section id="rice_info">
+				<h2>GNU/Linux Rices</h2>
+				<p>These are some of my recent GNU/Linux rices. To learn more about ricing, you can go to this blog-post: <a href="https://jie-fang.github.io/blog/basics-of-ricing" target="_blank">The Basics of Ricing Linux</a>. You can find my <a href="https://github.com/E-Almqvist/dotfiles" target="_blank">dotfiles</a> on my GitHub with all of the technical specifications.</p>
+			</section>
+
+			<section id="rice">
+				<img class="rice-picture" src="img/rice/22-Nov-2020.jpeg" alt="GNU/Linux rice at 22-Nov-2020">
+				<img class="rice-picture" src="img/rice/14-Jul-2020.jpeg" alt="GNU/Linux rice at 14-Jul-2020">
+				<img class="rice-picture" src="img/rice/5-Jan-2021.jpeg" alt="GNU/Linux rice at 5-Jan-2021">
+				<img class="rice-picture" src="img/rice/8-Feb-2021.jpeg" alt="GNU/Linux rice at 8-Feb-2021">
+				<img class="rice-picture" src="img/rice/7-Jul-2020.jpeg" alt="GNU/Linux rice at 7-Jul-2020">
+				<img class="rice-picture" src="img/rice/16-Dec-2020.jpeg" alt="GNU/Linux rice at 16-Dec-2020">
+				<img class="rice-picture" src="img/rice/12-Feb-2021.jpeg" alt="GNU/Linux rice at 12-Feb-2021">
+				<img class="rice-picture" src="img/rice/21-Feb-2021.jpeg" alt="GNU/Linux rice at 21-Feb-2021">
+				<img class="rice-picture" src="img/rice/5-Dec-2020.jpeg" alt="GNU/Linux rice at 5-Dec-2020">
+				<img class="rice-picture" src="img/rice/22-Dec-2020.jpeg" alt="GNU/Linux rice at 22-Dec-2020">
+				<img class="rice-picture" src="img/rice/9-Sep-2020.jpeg" alt="GNU/Linux rice at 9-Sep-2020">
+				<img class="rice-picture" src="img/rice/20-Nov-2020.jpeg" alt="GNU/Linux rice at 20-Nov-2020">
+				<img class="rice-picture" src="img/rice/18-Jun-2020.jpeg" alt="GNU/Linux rice at 18-Jun-2020">
+			</section>
+		</div>		
+		<footer>
+			<article id="art_fo_license">
+				<h1>This website is open-source and licensed under the GNU General Public License, version 2.</h1>
+				<ul>
+					<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/portfolio-website" target="_blank">Source code</a></li>
+					<li><span class="icon"></span> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">License</a> <i>(GPL-2.0)</i></li>
+				</ul>
+			</article>
+
+			<article id="art_fo_links">
+				<ul>
+					<li><a href="#">Back to top</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="index.html#experience">Experience</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><a href="index.html#foss">FOSS</a></li>
+				</ul>
+			</article>
+		</footer>
+
+		<script src="js/burger_menu.js"></script>
+		<script src="js/modal.js"></script>
+	</body>
+</html>
