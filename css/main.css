@@ -248,18 +248,6 @@ footer p {
 }
 #art_projects h1 { font-size: 1.8rem; }
 
-/* experience */
-#experience {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#art_experience		{ grid-area: ex_ex; }
-#art_progsysa		{ grid-area: ex_ps; }
-#art_progsysa h2	{ margin: 2rem 0 0.5rem 1rem; } 
-
-
 /* Contact */
 #contact article { margin: 1rem 0; }
 
