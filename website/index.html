@@ -4,127 +4,75 @@
 	<head> 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" target="_self" href="css/main.css">
+		<meta name="description" content="My self-hosted and non-bloat portfolio website!">
 		<title>AlmTech</title>
 	</head>
 	<body>
 		<header>
-			<div id="logo_container"><img src="img/logo.png" alt="AlmTech Logo"></div>
+			<pre>
+    _    _         _____         _
+   / \  | |_ __ __|_   _|__  ___| |__
+  / _ \ | | '_ ` _ \| |/ _ \/ __| '_ \
+ / ___ \| | | | | | | |  __/ (__| | | |
+/_/   \_\_|_| |_| |_|_|\___|\___|_| |_|
+			</pre>
 
-			<svg id="burger" class="button" width="25" viewBox="0 0 25 20">
-				<g fill="#fefefe" class="burger_lines">
-					<rect width="100%" height="2" y="0" class="line1"></rect>
-					<rect width="100%" height="2" y="6" class="line2"></rect>
-					<rect width="100%" height="2" y="12" class="line3"></rect>
-				</g>
-			</svg>
-
-			<nav class="hidden">		
-				<ul> <!-- This will be hidden until the user clicks the burger menu (or desktop) !-->
-					<li><a class="button navlink" href="#about">About</a></li>
-					<li><a class="button navlink" href="#projects">Projects</a></li>
-					<li><a class="button navlink" href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+			<ul class="nostylelist hor-list">
+				<li><a target="_self" href="#about" class="button">About</a></li>
+				<li><a target="_self" href="#contact" class="button">Contact</a></li>
+				<li><a target="_self" href="#links" class="button">Links</a></li>
+				<li><a target="_self" href="#projects" class="button">Projects</a></li>
+			</ul>
+			<hr>
 		</header>
 
-		<div class="anim_fadein" id="main_wrapper">
+		<section id="about">
+			<h1>$ whoami</h1>
+			<p>I am a student with a passion for backend & low-level programming, GNU/Linux, and mathematics. I also have an interest in physics and philosophy.</p>
+			<p>You can find all of my open-source projects<br> on my GitHub: <a target="_blank" href="https://github.com/E-Almqvist/">https://github.com/E-Almqvist/</a></p>
 
-			<section class="cont_section" id="about">
-				<div class="container">
-					<article id="art_whoami">
-						<h1>$ whoami</h1>
-						<p>I am a student with a passion for backend & low-level programming, GNU/Linux, and mathematics. I also have an interest in physics and philosophy.</p>
-					</article>
-				
-					<article id="art_links">
-						<ul class="horizontal_list">
-							<li><a class="button" href="https://github.com/E-Almqvist" target="_blank"><span class="icon"></span> GitHub</a></li>
-							<li><a class="button" href="mailto:elalmqvist@gmail.com" target="_blank"><span class="icon"></span> Email</a></li>
-							<li><a class="button" href="https://github.com/AlmTechSoftware" target="_blank"><span class="icon"></span> AlmTech</a></li>
-						</ul>
-					</article>
-				</div>
-			</section>
-			
-			<section class="cont_section" id="projects">
-				<article id="art_projinfo">
-					<h1>Projects</h1>
-					<p>I have been mostly working on open-source projects since 2018. These are some of my past open-source projects. You can also find the rest of my projects on <a href="https://github.com/E-Almqvist" target="_blank">GitHub</a>.</p>
-				</article>
+			<h2>Ugly website?!</h2>
+			<p>It is not ugly, it is (semi-)<em>minimalistic</em>. The internet is filled with bloated webpages making it harder for people with a lesser internet-connection to visit those sites. One way to combat this is to make your website minimal! Which is what I did... Your bandwidth will thank me later.</p>
+		</section>
 
-				<article id="art_projects">
-					<h1>Recent projects</h1>
-					<ul>
-						<li class="repocard">
-							<h2>e- Operating System (eOS)</h2>
-							<p>A simple x86 operating system written in Assembly & C. (WIP)</p>
-							<ul>
-								<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/eOS/archive/refs/heads/master.zip" target="_self">Download</a></li>
-								<li><span class="icon"></span> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">License</a></li>
-								<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/eOS" target="_blank">Source code</a></li>
-							</ul>
-						</li>
-						<li class="repocard">
-							<h2>AIlib</h2>
-							<p>A simple AI and machine-learning library written in python.</p>
-							<ul>
-								<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/ailib/archive/refs/heads/master.zip" target="_self">Download</a></li>
-								<li><span class="icon"></span> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">License</a></li>
-								<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/ailib" target="_blank">Source code</a></li>
-							</ul>
-						</li>
-						<li class="repocard">
-							<h2>Room-Computer</h2>
-							<p>A simple room controller that controls your IOT gadgets.</p>
-							<ul>
-								<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/roomcomputer/archive/refs/heads/master.zip" target="_self">Download</a></li>
-								<li><span class="icon"></span> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">License</a></li>
-								<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/roomcomputer" target="_blank">Source code</a></li>
-							</ul>
-						</li>
-					</ul>
-				</article>
-			</section>
+		<section id="contact">
+			<h1>Contact Information</h1>
+			<p>You can contact me through email. Nothing else. Please do not spam me :)</p>
+			<ul>
+				<li>Email: <a target="_blank" href="mailto:elalmqvist@gmail.com">elalmqvist@gmail.com</a></li>
+			</ul>
 
-			<section class="cont_section" id="contact">
-				<article id="art_co_about">
-					<h1>Contact Information</h1>
-					<p>You can contact me through <a href="mailto:elalmqvist@protonmail.com">email</a> <i>(elalmqvist@protonmail.com)</i> or my <a href="elalmqvist@gmail.com">gmail</a> <i>(elalmqvist@gmail.com)</i>.<br><br>And if you prefer it; you can also contact me with <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank">PGP</a>.</p>
-				</article>
-				<article id="art_co_links">
-					<h1>Links</h1>
-					<ul>
-						<li>Email:<br><a href="mailto:elalmqvist@gmail.com" target="_blank">elalmqvist@gmail.com</a></li>
-						<li>GitHub:<br><a href="https://github.com/E-Almqvist" target="_blank">/E-Almqvist</a></li>
-						<li>Donate (BTC):<br><code>19rcbUY1xoQ6SqQzVQQNYikvGiuVGxKLPR</code></li>
-						<li>Donate (XMR):<br><code>89J3M3B189kNZ9NzgYf5syECgtVwzfpZq45c1<br>VvpqThvYcY6UxDDuJUH4uZ5hDH9ne8<br>uw5R7VhUPc2AoDBBpJ3p15UxGBoX</code></li>
-						<li>PGP Fingerprint:<br><code>68B2976849F03C7238AEB081E31A99CE3E75A158</code></li>
-					</ul>
-				</article>
-			</section>
-		</div>
-		
+			<p>You can also contact me using PGP. My PGP fingerprint is <code>68B2976849F03C7238AEB081E31A99CE3E75A158</code></p>
+
+			<h2>Donations</h2>
+			<p>Feel free to donate <a target="_blank" href="https://www.getmonero.org/">XMR</a>, <a target="_blank" href="https://ethereum.org/">ETH</a>, <a target="_blank" href="https://dogecoin.com/">DOGE</a> or <a target="_blank" href="https://bitcoin.org/">BTC</a>. All donations are appreciated and directly supports me and my work.</p> 
+
+			<ul>
+				<li>XMR: <code>89J3M3B189kNZ9NzgYf5syECgtVwzfpZq45c1VvpqThvYcY6UxDDuJUH4uZ5hDH9ne8uw5R7VhUPc2AoDBBpJ3p15UxGBoX</code></li>
+				<li>ETH: <code>0x911E5f336c0371bBdD80773D2910E352545461F8</code></li>
+				<li>DOGE: <code>D5VapeMVkuuWrKxxzQ82aeWw31qLVrKfpU</code></li>
+				<li>BTC: <code>19rcbUY1xoQ6SqQzVQQNYikvGiuVGxKLPR</code></li>
+			</ul>
+		</section>
+
+		<section id="links">
+			<h1>Links & Socials</h1>
+			<ul class="nostylelist">
+				<li><a target="_blank" href="https://github.com/E-Almqvist/"> Personal GitHub</a></li>
+				<li><a target="_blank" href="https://github.com/AlmTechSoftware/"> AlmTech GitHub</a></li>
+				<li><a target="_blank" href="https://github.com/aaqc/"> AAQC GitHub</a></li>
+			</ul>
+		</section>
+
+		<hr>
+
 		<footer>
-			<article id="art_fo_license">
-				<h1>This website is open-source and licensed under the GNU General Public License, version 2.</h1>
-				<ul>
-					<li><span class="icon"></span> <a href="https://github.com/E-Almqvist/portfolio-website" target="_blank">Source code</a></li>
-					<li><span class="icon"></span> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">License</a> <i>(GPL-2.0)</i></li>
-				</ul>
-				<!--Logo <- 0xaec1ae--!>
-			</article>
-
-			<article id="art_fo_links">
-				<ul>
-					<li><a href="#">Back to top</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</article>
+			<p>This website is open-source and licensed under the GNU General Public License, version 2.</p>
+			<ul class="nostylelist hor-list">
+				<li> <a href="https://github.com/E-Almqvist/portfolio-website" target="_blank">Source code</a></li>
+				<li> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">License</a> <i>(GPL-2.0)</i></li>
+			</ul>
 		</footer>
-
-		<script src="js/scroll_effect.js"></script>
-		<script src="js/burger_menu.js"></script>
 	</body>
 </html>

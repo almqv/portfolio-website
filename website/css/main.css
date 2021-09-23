@@ -4,313 +4,140 @@
 	font-size: 2rem;
 	src: url("../misc/font/firanerd.ttf");
 }
-.icon { font-size: 1.6rem; }
 
 /*Global styling*/
-html {
-	background: #111015;
-	scroll-behavior: smooth;
-	/*transition-property: opacity;*/
-	transition-duration: 2s;
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 
 	font-family: "FiraNerd", monospace, sans-serif;
-	color: #fefefe;
-	font-size: 0.91rem;
+	color: #111015;
+	background: #fffdfa;
+	font-size: 1rem;
+}
+
+html {
+	scroll-behavior: smooth;
+	min-width: 750px;
 }
 
 code {
-	background: #232326;
+	background: #f3f3f6;
 	padding: 1px;
 	border-radius: 4px;
 	font-size: 0.8rem;
+	word-wrap: break-word;
 }
 
-article {
-	width: 100%;
+a {
+	color: #25f;
+	text-decoration: none; 
 }
 
-a { color: #cc6666; text-decoration: none; }
-
-h1 { font-size: 2.5rem; }
-
-ul { list-style-type: none; }
-
-section {
-	display: flex;
-	max-width: 700px;
-	margin: auto;
-	padding-top: 3.5rem; 
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	opacity: 1.0;
-	transition-property: opacity;
-	transition-duration: 1s;
-}
+h1 { font-size: 1.2rem; }
+h2 { margin-top: 32px; }
 
 body {
-	-ms-overflow-style: none; 
-	scrollbar-width: none;
-}
-::-webkit-scrollbar { display: none; }
-
-/*Animations*/
-
-/*Animation that makes the website fade in when you enter it. Cool animation.*/
-.anim_fadein { opacity: 1; }
-.anim_fadeout { opacity: 0; }
-
-/*Animation for buttons. Said element gets transparent when mouse is over it.*/
-.button, .anim_hoverfade, a { transition-duration: 0.5s; }
-.button:hover, .anim_hoverfade:hover, a:hover { opacity: 0.4; cursor: pointer; }
-
-/*Classes*/
-.button { opacity: 1.0; color: #fefefe; }
-
-.hidden { 
-	opacity: 0;
-	transition-property: opacity;
-	transition-duration: 0.25s;
-	margin-top: -100vh;
+	width: 1024px;
+	margin: auto;
 }
 
-.cont_section { height: 100vh; }
-
-.horizontal_list {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	list-style-type: none;
-}
-.horizontal_list li { margin: 0 0.4rem; }
-.horizontal_list li a { text-decoration: none; }
-
-.fab { font-size: 1.2rem; } /*Font Awesome icons*/
-
-.container {
-	top: 25%;
-	transform: translateY(-25%);
-	-ms-transform: translateY(-25%);
+ul {
+	margin-left: 2rem;
 }
 
-.container_center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+p {
+	margin: 8px;
 }
 
-.repocard {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0.8rem;
-	border: 2px solid #cccccc9a;
-	margin: 1rem 0;
-}
-
-.repocard ul {
-	margin-top: 0.2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.repocard ul li { margin: 0 1rem; }
-.repocard h2 { font-size: 1.1rem; }
-.repocard p { font-size: 0.8rem; }
-
-/*Main styling*/
-#main_wrapper {
-	width: 100%;
-	height: 100%;
-	padding: 0 5vw;
-}
-
-/* Header & Navigation */
 header {
-	position: fixed;
-	top: 0;
-	display: flex;
-	height: 2.5rem;
-	width: 100vw;
-	padding: 4px 5vw;
-	justify-content: center;
-	align-items: center;
-	background: #111015ea;
-	z-index: 1;
-}
-
-#burger {
-	cursor: pointer;
-	margin-left: auto;
-	z-index: 2;
-}
-
-#logo_container { 
-	padding: 0.2rem; 
-	z-index: 2;
-}
-
-#logo_container img {
-	width: auto;
-	height: 1.8rem;
-}
-
-nav {
-	display: flex;
-	float: right;
-	background: #111015;
-	opacity: 1;
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	transition-duration: 0.4s;
-	transition-property: opacity;
-	padding: 0.2rem;
-	z-index: 1;
-	align-items: center;
-	justify-content: center;
-}
-
-nav ul {
 	display: flex;
 	flex-direction: column;
-	list-style-type: none;
+	align-items: center;
+	margin-bottom: 5vh;
 }
 
-nav ul li { 
-	text-align: center;
-	margin: 1rem 0;
+header ul {
+	margin: auto;
+	margin-bottom: 16px;
 }
 
-nav ul li a {
-	font-size: 2.4rem;
-	text-decoration: none;
+section {
+	margin: 2rem;
+	padding: 16px;
 }
 
+header hr {
+	width: 70%;
+}
 
 footer {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "fo_li fo_in";
-	background: #1a181f;
-	padding: 1rem 10vw;
-	grid-area: fo;
+	margin-bottom: 64px;
+}
+
+footer p {
 	text-align: center;
 }
 
-footer h1 {
-	font-size: 0.9rem;
-	color: #fefefe;
-}
-
-footer ul { margin-top: 0.2rem; }
-
-footer p {
-	color: #0f0f0f;
-}
-
-#art_fo_license { 
+footer ul {
 	display: flex;
-	flex-direction: column;
-	grid-area: fo_li;
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
 }
 
-#art_fo_links { grid-area: fo_in; }
-#art_fo_links ul li { margin-top: 0.5rem; }
-#art_fo_links ul li a { color: unset; }
-
-/* About */
-#art_links { margin-top: 2rem; }
-#art_links li { margin: 0 1rem; }
-
-/* Projects */
-
-#art_projinfo { 
-	grid-area: pr_in; 
-	margin-bottom: 2rem;
+footer ul li {
+	margin: 2px 1rem;
 }
 
-#art_projects {
-	grid-area: pr_pr;
-	margin-bottom: 2rem;
-}
-#art_projects h1 { font-size: 1.8rem; }
+.nostylelist { list-style-type: none; }
 
-/* Contact */
-#contact article { margin: 1rem 0; }
-
-#contact ul li { margin: 0.7rem; }
-
-/*Media queries*/
-@media only screen and (max-width: 398px) {
-	#art_links ul li a { font-size: 0.8rem; }
-	.icon { font-size: 1.2rem; }
+.button {
+	font-size: 1.2rem;
+	color: #000;
+	text-decoration: underline;
 }
 
-@media only screen and (min-width: 690px) {
-	section { max-width: 1200px; }
-
-	header { justify-content: space-between; }
-
-	nav {
-		background: #0000;
-		width: auto;
-		height: 2.5rem;
-		margin-left: auto;
-		left: unset;
-		top: unset;
-		position: unset;
-	}
-
-	nav ul { 
-		flex-direction: row; 
-		right: 2rem;
-	}
-	nav ul li { margin: 0.4rem; }
-	nav ul li a { font-size: 1.2rem; }
-
-	#burger { display: none; }
-
-	.hidden {
-		opacity: 1;
-		margin-top: 0;
-	}
-
-	section {
-		display: grid;
-	}
-
-	#projects {
-		gap: 8rem;
-		grid-template-columns: 1fr 2fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "pr_in pr_pr";
-	}
-
-	#art_projinfo { grid-area: pr_in; }
-	#art_projects { grid-area: pr_pr; }
-
-	#contact {
-		gap: 4rem;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "co_in co_li";
-	}
-
-	#art_co_about { grid-area: co_in; }
-	#art_co_links { grid-area: co_li; }
+.button, a {
+	transition-duration: 0.5s;
 }
 
-@media only screen and (min-width: 1100px) { * { font-size: 1.1rem; } }
+.button:hover, a:hover {
+	color: #cc6666;	
+}
+
+header .hor-list li {
+	float: left;
+	margin: 0 16px;
+}
+
+/*IDs*/
+
+#about ul {
+	width: 50%;
+	margin: auto;
+	margin-top: 32px;
+}
+
+#about ul li { text-align: center; }
+
+
+@media (prefers-color-scheme: dark) {
+	* {
+		color: #fefefe;
+		background: #303438;
+	}
+
+	code {
+		background: #252525;
+	}
+
+	a {
+		color: #acf;
+	}
+
+
+	.button {
+		color: #fefefe;
+	}
+}
