@@ -98,6 +98,7 @@ footer ul li {
 }
 
 .button, a {
+	transition-property: color;
 	transition-duration: 0.5s;
 }
 
