@@ -19,7 +19,6 @@
 
 html {
 	scroll-behavior: smooth;
-	min-width: 750px;
 }
 
 code {
@@ -39,7 +38,7 @@ h1 { font-size: 1.2rem; }
 h2 { margin-top: 32px; }
 
 body {
-	width: 1024px;
+	max-width: 1024px;
 	margin: auto;
 }
 
@@ -125,7 +124,7 @@ header .hor-list li {
 @media (prefers-color-scheme: dark) {
 	* {
 		color: #fefefe;
-		background: #303438;
+		background: #111015;
 	}
 
 	code {
