@@ -42,6 +42,10 @@ body {
 	margin: auto;
 }
 
+body hr {
+	opacity: 0.4;
+}
+
 ul {
 	margin-left: 2rem;
 }
@@ -94,7 +98,6 @@ footer ul li {
 .button {
 	font-size: 1.2rem;
 	color: #000;
-	text-decoration: underline;
 }
 
 .button, a {
@@ -103,7 +106,7 @@ footer ul li {
 }
 
 .button:hover, a:hover {
-	color: #cc6666;	
+	opacity: 0.5;
 }
 
 header .hor-list li {
