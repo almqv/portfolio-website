@@ -13,7 +13,7 @@
 
 /*Global styling*/
 :root {
-	font-family: "Hack-TTF";
+	font-family: "Hack-TTF", "FiraNerd", monospace;
 	color: #fff;
 	font-size: 16px;
 }
