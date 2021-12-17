@@ -1,11 +1,5 @@
 /*Fonts*/
 @font-face {
-	font-family: "FiraNerd";
-	font-size: 2rem;
-	src: url("../misc/font/firanerd.ttf");
-}
-
-@font-face {
 	font-family: "Hack-TTF";
 	font-size: 2rem;
 	src: url("../misc/font/Hack-Regular.ttf");
@@ -13,7 +7,7 @@
 
 /*Global styling*/
 :root {
-	font-family: "Hack-TTF", "FiraNerd", monospace;
+	font-family: "Hack-TTF", "Hack", monospace;
 	color: #fff;
 	font-size: 16px;
 }
