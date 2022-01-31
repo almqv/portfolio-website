@@ -83,6 +83,10 @@ header ul {
 	margin-bottom: 16px;
 }
 
+header ul li {
+	font-style: italic;
+}
+
 
 section {
 	padding: 16px;
